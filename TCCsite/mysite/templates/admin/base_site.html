@@ -1,0 +1,60 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block extrastyle %}
+<style>
+	#header{
+		background-color:#0b6a66;
+	}
+	.button, input[type=submit], input[type=button], .submit-row input, a.button {
+		 background: rgba(16, 97, 93, 0.53);
+	}
+	.button:hover, input[type=submit]:hover, input[type=button]:hover {
+		background: rgba(16, 97, 93, 0.53);
+	}
+	#branding h1, #branding h1 a:link, #branding h1 a:visited {
+		color: #f5f5f5;
+	}
+	.module h2, .module caption, .inline-group h2 {
+		background: rgba(16, 97, 93, 0.53);
+	}
+	div.breadcrumbs {
+		background: rgba(16, 97, 93, 0.53);
+	}
+	.selector-chosen h2 {
+		background-color: rgba(16, 97, 93, 0.53);
+		color: #fff;
+	}
+	.button.default, input[type=submit].default, .submit-row input.default {
+		background: rgba(16, 97, 93, 0.53);
+	}
+	.button.default:hover, input[type=submit].default:hover {
+		background: rgba(16, 97, 93, 0.53);
+	}
+	.object-tools a:focus, .object-tools a:hover {
+		background: #999;
+	}
+	div.breadcrumbs a {
+		color: #fff;
+	}
+	div.breadcrumbs a:focus, div.breadcrumbs a:hover {
+		color: #0c0c0c;
+	}
+	div.breadcrumbs {
+		color: #f7f7f7;
+	}
+	#user-tools a:focus, #user-tools a:hover {
+		border-bottom-color: rgba(16, 97, 93, 0.53);
+		color: #cdd4d8;
+	}
+
+</style>
+
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}"> TCCsite Administração
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
